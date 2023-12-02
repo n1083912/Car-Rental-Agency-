@@ -9,6 +9,7 @@ class Car(object):
         self.CarMile = str(CarMile)
         self.CarDayPrice = str(CarDayPrice)
         self.CarRentalDate = str(CarRentalDate) 
+        
 Car1 = Car("Honda Civic", "blue","5","5","Manual","j85409","150000","20","25/11/23")
 Car2 = Car("Ford Focus", "Green","5","5","Manual","p32516","350000","40","30/11/23")
 Car3 = Car("Ford Fiesta", "Orange","5","5","Manual","u76515","5000","25","20/12/23")
@@ -28,8 +29,10 @@ textFile = open("cars.txt", "a")
 allCars = (Car1,Car2,Car3,Car4,Car5,Car6,Car7,Car8,Car9,Car10,Car11,Car12,Car13,Car14,Car15)
 textFile.write(Car1.CarName-.CarRentalDate) 
 textFile.close()
-
-userReply = input("0 = See full of rentable cars\n 1 = Filter list of rentable cars\n 2 = Filtered List of Cars\n 3 = Exit\n")
-if userReply == "1":
+print("Welcome to the Car Agency python code!")
+userReply = input("0 = See full of rentable cars\n 1 = Filter list of rentable cars\n  2 = Exit\n")
+if userReply == 1:
     print(Car1)
+if userReply == 2:
+    filter = input("What would you like to filter it by?\n
     
